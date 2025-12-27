@@ -1,6 +1,14 @@
 
 
 
+
+
+
+
+
+
+
+
 # Use an official Eclipse Temurin runtime as a parent image
 FROM eclipse-temurin:17-jdk-focal
 
@@ -10,6 +18,7 @@ WORKDIR /app
 # Copy the project files from the sub-directory
 COPY Smart_Task_Maneger/.mvn/ .mvn
 COPY Smart_Task_Maneger/mvnw .
+RUN chmod +x mvnw  # <--- यह नई लाइन है
 COPY Smart_Task_Maneger/pom.xml .
 COPY Smart_Task_Maneger/src ./src
 
@@ -24,3 +33,6 @@ EXPOSE 8081
 
 # Command to run the application
 CMD ["java", "-jar", "target/smart-task-manager-0.0.1-SNAPSHOT.jar"]
+
+
+
