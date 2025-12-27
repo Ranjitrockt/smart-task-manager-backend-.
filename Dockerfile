@@ -1,18 +1,20 @@
-# Use an official OpenJDK runtime as a parent image
+
+
+
+# Use an official Eclipse Temurin runtime as a parent image
 FROM eclipse-temurin:17-jdk-focal
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the Maven wrapper and the project object model file
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
+# Copy the project files from the sub-directory
+COPY Smart_Task_Maneger/.mvn/ .mvn
+COPY Smart_Task_Maneger/mvnw .
+COPY Smart_Task_Maneger/pom.xml .
+COPY Smart_Task_Maneger/src ./src
 
 # Download project dependencies
 RUN ./mvnw dependency:go-offline
-
-# Copy the project source
-COPY src ./src
 
 # Package the application
 RUN ./mvnw package -DskipTests
