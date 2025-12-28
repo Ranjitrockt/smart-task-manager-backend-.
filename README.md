@@ -132,7 +132,7 @@ low → default
 
 ⚙️ How to Run Locally
 1️⃣ Clone Repository
-git clone <backend-repo-url>
+git clone backend-repo-url https://github.com/Ranjitrockt/smart-task-manager-backend-.
 cd backend
 
 2️⃣ Update Database Config
@@ -163,8 +163,6 @@ Auto-classification at service level
 PostgreSQL JSONB used for flexible fields
 
 🔮 What I’d Improve (Given More Time)
-
-Real-time updates using WebSockets
 
 Advanced analytics dashboard
 
