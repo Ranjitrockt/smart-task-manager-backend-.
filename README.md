@@ -141,7 +141,7 @@ application.properties
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/smartTask
 spring.datasource.username=postgres
-spring.datasource.password=your_password
+spring.datasource.password=
 
 3️⃣ Run Application
 mvn spring-boot:run
@@ -163,10 +163,6 @@ Auto-classification at service level
 PostgreSQL JSONB used for flexible fields
 
 🔮 What I’d Improve (Given More Time)
-
-AI/NLP based entity extraction
-
-Role-based authentication (JWT)
 
 Real-time updates using WebSockets
 
