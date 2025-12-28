@@ -1,8 +1,15 @@
-🧠 Smart Site Task Manager – Backend
-📌 Project Overview
-
-Smart Site Task Manager ek intelligent task management backend hai jo task create hote hi automatic classification, priority detection aur suggested actions generate karta hai.
-
+Project Overview
+This project is a Smart Task Management System built to demonstrate full-stack development capabilities as required by the developer assessment. The application's architecture is centered around a powerful and intelligent backend, supported by a functional and clean Flutter mobile interface.
+Backend Architecture (Core Expertise)
+My primary focus and expertise lie in backend development, and this project heavily reflects that. The backend was built using Java and the Spring Boot framework, following modern software engineering principles.
+•
+Intelligent Services: The core logic resides in the backend, which automatically classifies tasks by category (e.g., Scheduling, Finance) and priority (High, Medium, Low) through content analysis. It also generates contextual suggested actions.
+•
+Robust API: A complete RESTful API was designed and implemented with clear, logical endpoints for all CRUD (Create, Read, Update, Delete) operations, including pagination and filtering.
+•
+Database Design: The system uses a PostgreSQL database with a normalized schema, including a task_history table to ensure a complete audit trail for every task.
+•
+Deployment & DevOps: The entire backend, along with its database, is professionally deployed on Render, demonstrating my ability to manage the full lifecycle of a service from development to live deployment.
 Example:
 Input Task:
 
